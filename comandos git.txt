@@ -1,4 +1,18 @@
+git config --global user.name "edvaldo gomes"
+
+
 1 git status
 2 git add .
 3 git commit -m "texto"
 4 git push
+
+
+
+vs cod
+
+git init
+
+
+git remote add origin https://github.com/edvaldogomeslima/login.git
+git branch -M main
+git push -u origin main
