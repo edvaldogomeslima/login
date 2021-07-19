@@ -1,0 +1,139 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.container{
+    background-image: url('../img/fundo.jpg'); /* inserindo img */
+    background-size: cover; /* ajustando na tela inteira */
+    background-position: center; /*posicionando no centro*/
+    width: 100vw; /* tamanho */
+    height: 100vh; /* altura */
+    display: flex; /* ataca as class/id filhos */
+    justify-content: center; /* centrualiza na horizontal */
+    align-items: center; /* centrualiza na vertical */
+}
+
+.logo img{
+    width: 110px; /* tamanho */
+    border-radius: 100%; /* borda */
+    border: 5px solid #fff;
+    position: absolute;
+    top: -70px;
+    left: 50px;
+    /* transform: translateY(-50%) translateX(30%); */
+                                /* 
+                                    tranform altera as dimenções 
+                                    translateY altera a altura
+                                    (não afeta nem uma div)
+                                */
+
+                                /*Ou position*/
+}
+
+.painel {
+    padding: 50px;
+    background: #fff;
+    position: relative;
+}
+
+.login{
+    margin-top: 25px;
+}
+
+.login, .senha
+{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    border: 1px solid rgb(212, 212, 212);
+    margin-bottom: 10px;
+}
+
+#icon_perfil{
+    width: 15px;
+    padding: 0 7px 0 7px;
+}
+
+#icon_senha{
+    width: 27px;
+    padding: 0px 7px 0 2px;
+
+}
+/* 
+as imagens por padrão tem tamanhos diferentes, por isso modificar cada uma
+na mao
+*/
+
+.login input, .senha input{
+    height: 30px;
+    outline: none;
+    border: none;
+    background: rgb(255, 255, 255);
+    width: 400px;
+    padding: 3px 7px;
+}
+
+/* depois volto aqui */
+input[type=checkbox]{
+    background-color: green;
+}
+
+
+/* input lembrar */
+.checkbox{
+    display: none;
+}
+
+.lembrar_item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#lembrar{
+    width: 40px;
+    height: 20px;
+    background: rgb(200, 200, 200);
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+    margin-right: 10px;
+}
+
+.anima_l
+{
+    background: green;
+}
+
+.circulo {
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    transition: ease .3s;
+}
+
+/* animação onde vai deslocar */
+.desloca
+{
+    transform: translateX(23px);
+}
+
+.button {
+    padding: 5px 10px;
+    background-color: rgb(153, 182, 228);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
